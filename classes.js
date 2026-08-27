@@ -69,11 +69,3 @@ function makeCounter(start = 0) {
     get value() { return count; },
   };
 }
-
-class Broken {
-  constructor() { this.label = "works"; }
-  show() { return this.label; }
-}
-const b = new Broken();
-const loose = b.show;    // pulled off the object
-loose();                 // throws
