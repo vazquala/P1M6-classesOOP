@@ -58,13 +58,22 @@ console.log(Money.tax(40));     // $2.8 tax.
 
 
 // #5
-const bag = ["Item", "Weapon", "Potion"];
-
-for (const thing of bag) {
-  console.log(thing.describe());
-};
-
-// Stretch
 // I'll come back for this later!!!! (I will make sure I don't forget.)
 
 
+// Stretch
+function makeCounter(start = 0) {
+  let count = start;
+  return {
+    increment: () => ++count,
+    get value() { return count; },
+  };
+}
+
+class Broken {
+  constructor() { this.label = "works"; }
+  show() { return this.label; }
+}
+const b = new Broken();
+const loose = b.show;    // pulled off the object
+loose();                 // throws
