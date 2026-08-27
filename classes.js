@@ -53,14 +53,6 @@ class Money {
 
 console.log(Money.tax(40));     // $2.8 tax.
 
-// #4
-// I'll come back for this later!!!! (I will make sure I don't forget.)
-
-
-// #5
-// I'll come back for this later!!!! (I will make sure I don't forget.)
-
-
 // Stretch
 function makeCounter(start = 0) {
   let count = start;
